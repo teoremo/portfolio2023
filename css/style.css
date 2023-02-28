@@ -104,52 +104,217 @@ h4 {
 
 
 .a-text {
-	font-family: "inter", Helvetica, sans-serif;
-	text-decoration: underline;
+    font-family: "inter", Helvetica, sans-serif;
+    text-decoration: underline;
 }
 
 .a-text:hover {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 
 
-.background {
+
+/*Homepage*/
+.homepage__hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 55px;
+
     position: absolute;
-    width: 100%;
-    max-width: 4000px;
-    margin: -200px auto;
-    filter: blur(30px);
-  
-    pointer-events: none;
+    width: 924px;
+    height: 345px;
+    left: 549px;
+    top: 198px;
+}
+
+.homepage__hero-title {
+    width: 924px;
+    height: 114px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.homepage__hero-description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 26px;
+
+    width: 671px;
+    height: 176px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.homepage__hero-image {
+    position: absolute;
+    width: 1134px;
+    height: 748px;
+    left: calc(50% - 1134px/2);
+    top: 697px;
+
+    background: url(src/images/homepage__hero-image.jpg);
+    border-radius: 5px;
+}
+
+.homepage__card {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 44px;
+    gap: 26px;
+
+    position: absolute;
+    width: 786px;
+    height: 370px;
+    left: 228px;
+    top: 1109px;
+
+    border-bottom: 1px solid #04535E;
+}
+
+.homepage__card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 7px;
+
+    width: 786px;
+    height: 308px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/*shared*/
+.layout {
+    position: relative;
+    width: 2000px;
+    height: 7720px;
     background: #F7F7F7;
-  }
-  
-  .background-svg {
-    position: relative;
-    height: 100%;
-  
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
+}
 
+.layout__content {
+    position: absolute;
+    width: 1367px;
+    height: 7453px;
+    left: 316px;
+    top: 42px;
+}
 
+.page__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 120px;
 
-  /*Homepage*/
-.homepage__wrapper
-
-
-  /*shared*/
-.page {
-    z-index: 2;
-    overflow: hidden;
-    background-color: white;
-    width: 90%;
-    max-width: 1134px;
-    margin: 0 auto 60px auto;
-    position: relative;
-    padding: 60px 0 60px 0;
+    position: absolute;
+    width: 1367px;
+    height: 5905px;
+    left: calc(50% - 1367px/2 - 0.5px);
+    top: 1590px;
     box-shadow: 0px 10px 70px rgba(0, 0, 0, 0.05);
-  }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 107px 351px 107px 228px;
+    gap: 100px;
+
+    width: 1365px;
+    height: 1482px;
+
+    background: #FFFFFF;
+
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+
+    width: 900px;
+    height: 494px;
+
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.quote__container {
+    width: 900px;
+    height: 385px;
+}
+
+.client__container {
+    width: 900px;
+    height: 79px;
+}
+
+.page__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 786px;
+    height: 548px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+/*Contacts*/
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 204px;
+    gap: 50px;
+
+    width: 1367px;
+    height: 815px;
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.contacts__avatar {
+    display: block;
+    margin: 0 auto 60px;
+    width: 30vw;
+    max-width: 300px;
+    min-width: 200px;
+    height: 30vw;
+    max-height: 300px;
+    min-height: 200px;
+    border-radius: 50%;
+
+}
