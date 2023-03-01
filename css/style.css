@@ -120,17 +120,14 @@ cite {
 
 
 /*layouts*/
-.test{
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
-}
 
 .layout {
     position: relative;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
-    
+
+
 }
 
 .background {
@@ -148,7 +145,7 @@ cite {
 .page {
 
     z-index: 2;
-    
+
     padding: 60px 7.5vw;
     margin: 0 auto 60px auto;
     width: 90%;
@@ -157,10 +154,11 @@ cite {
     background: #FFFFFF;
     box-shadow: 0px 10px 70px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
-    scroll-snap-align: start;
+
 }
 
 .page__content {
+
     max-width: 786px;
     margin-bottom: 40px;
 
@@ -168,10 +166,10 @@ cite {
 
 
 
- nav{
+nav {
 
-    height: 70px;    
-    margin:20px auto 40px auto;
+    height: 70px;
+    margin: 20px auto 40px auto;
     width: 90%;
     max-width: 1134px;
     display: flex;
@@ -179,11 +177,12 @@ cite {
     flex-wrap: wrap;
     justify-content: flex-end;
 
- } 
+}
 
- .nav__item{
+.nav__item {
     margin: 0 20px 0 20px;
- }
+}
+
 .page__content__item {
     margin-bottom: 40px;
 }
