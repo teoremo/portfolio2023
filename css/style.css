@@ -53,11 +53,9 @@ h1 {
 
     font-style: normal;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 50px;
     color: #04535E;
-
-
-    font-weight: bold;
+margin:-20px auto -15px auto;
 }
 
 h2 {
@@ -68,8 +66,9 @@ h2 {
     font-size: 36px;
     color: #04535E;
 
+    margin-bottom:30px;
 
-    margin-bottom: 60px;
+
 }
 
 h3 {
@@ -89,7 +88,7 @@ h4 {
 
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 34px;
     color: #04535E;
 
@@ -132,10 +131,10 @@ cite {
 
 .background {
     position: absolute;
-    filter: blur(30px);
+    
     width: 100%;
     max-width: 4000px;
-    margin: -100px -100px;
+    margin: -30px -200px;
 
     z-index: -2;
     pointer-events: none;
@@ -184,7 +183,8 @@ nav {
 }
 
 .page__content__item {
-    margin-bottom: 40px;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 /*Homepage*/
@@ -201,7 +201,7 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 55px;
+    gap: 0px;
     width: 85%;
     max-width: 902px;
     max-height: 345px;
@@ -216,7 +216,7 @@ nav {
 
 .homepage__hero-title {
     width: 902px;
-    height: 114px;
+  
 
     flex: none;
     order: 0;
@@ -229,9 +229,9 @@ nav {
     align-items: flex-start;
     padding: 0px;
     gap: 26px;
-
+    line-height: 18px;
     width: 671px;
-    height: 176px;
+  
 
     flex: none;
     order: 1;
@@ -239,8 +239,8 @@ nav {
 }
 
 .homepage__hero-description-1 {
-    width: 322px;
-    height: 176px;
+    width: 206px;
+    height: 160px;
 
     flex: none;
     order: 0;
@@ -248,8 +248,8 @@ nav {
 }
 
 .homepage__hero-description-2 {
-    width: 322px;
-    height: 176px;
+    width: 206px;
+    height: 160px;
 
     flex: none;
     order: 1;
