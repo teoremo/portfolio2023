@@ -122,15 +122,19 @@ cite {
 /*layouts*/
 .layout {
     position: relative;
-    z-index: 3;
+    z-index: 2;
+    overflow:hidden;
+    background-color: #F6F6F6;
 }
 
 .background {
     position: absolute;
+    filter:blur(30px);
     width: 100%;
     max-width: 4000px;
-    margin: -200px auto;
-
+    margin: -100px -100px;
+    
+    z-index: -2;
     pointer-events: none;
 }
 
