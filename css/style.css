@@ -120,20 +120,26 @@ cite {
 
 
 /*layouts*/
+.test{
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+}
+
 .layout {
     position: relative;
     z-index: 2;
-    overflow:hidden;
+    overflow: hidden;
     background-color: #F6F6F6;
+    
 }
 
 .background {
     position: absolute;
-    filter:blur(30px);
+    filter: blur(30px);
     width: 100%;
     max-width: 4000px;
     margin: -100px -100px;
-    
+
     z-index: -2;
     pointer-events: none;
 }
@@ -142,7 +148,7 @@ cite {
 .page {
 
     z-index: 2;
-
+    
     padding: 60px 7.5vw;
     margin: 0 auto 60px auto;
     width: 90%;
@@ -151,7 +157,7 @@ cite {
     background: #FFFFFF;
     box-shadow: 0px 10px 70px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
-
+    scroll-snap-align: start;
 }
 
 .page__content {
@@ -162,6 +168,22 @@ cite {
 
 
 
+ nav{
+
+    height: 70px;    
+    margin:20px auto 40px auto;
+    width: 90%;
+    max-width: 1134px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+ } 
+
+ .nav__item{
+    margin: 0 20px 0 20px;
+ }
 .page__content__item {
     margin-bottom: 40px;
 }
@@ -170,7 +192,7 @@ cite {
 .homepage__hero-wrapper {
     height: 80vh;
     max-height: 900px;
-    margin-top: 5vw;
+    margin-top: 3vw;
     vertical-align: middle;
     position: relative;
 }
@@ -241,6 +263,19 @@ cite {
 
 /*images*/
 
+img {
+
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    transition-delay: 500ms;
+
+}
+
 .image-s {
     max-width: 60vw;
     margin: 0 auto 60px auto;
@@ -268,7 +303,7 @@ cite {
 .homepage__card {
     box-sizing: border-box;
     max-width: 786px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     margin-bottom: 60px;
     border-bottom: 1px solid #04535E;
 }
