@@ -28,25 +28,18 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 149.5%;
+    line-height: 1.5;
 
     color: #04535E;
     margin: 0;
     padding: 0;
+
 }
 
-
-a {
-    font-family: "inter", Helvetica, sans-serif;
-
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29px;
-    color: #04535E;
-
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+p{
+    padding-bottom:5px;
 }
+
 
 h1 {
     font-family: "inter", Helvetica, sans-serif;
@@ -343,56 +336,65 @@ img {
 }
 
 
-/*accordion*/
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: white;
-    cursor: pointer;
-    text-align: left;
+
+/*Links*/
+a {
     font-family: "inter", Helvetica, sans-serif;
-    padding:0px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
+    font-weight: 400;
     color: #04535E;
+    cursor: pointer;
 
-    border: none;
-    outline: none;
-    transition: all 0.4s;
-    text-underline-position:auto;
-    text-decoration: underline;
-  
-  }
-  
+    -webkit-text-decoration: underline;
+    text-underline-position:under; 
+}
 
-  .accordion:after {
+a:hover{
+    -webkit-text-decoration: double underline;
+    color:#000000;
+
+}
+
+.text-link{
+ 
+}
+
+.text-link:hover{
+
+}
+
+.int-link{
+
+}
+
+.int-link:after {
     display: inline-block;
-    content: '    \002B'; /* Unicode character for "plus" sign (+) */
-    color: #04535E;
-    font-size: 24px;
-    text-decoration:none;
-    margin-left:10px;
-    -webkit-transform: rotate(-180deg);
-    transform-origin: 50% 55%;
-    transition: all 0.4s ease-out;
-    vertical-align:top;
-    line-height: 26px;
-  }
+    content: "\2192";
+    text-decoration: none;
+
+    margin-left: 10px;
+    transition: margin-left 0.3s ease-in-out;
+}
 
 
-  .accordion:hover::after{
+
+
+.int-link:hover::after {
+    margin-left: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+
+.ext-link:after {
     display: inline-block;
-    -webkit-transform: rotate(0deg);
-    transition: all 0.4s ease-out;
-  }
-
-  .active:after {
-    display: inline-block;
-    color: #04535E;
-    content: "    \2212"; /* Unicode character for "minus" sign (-) */
-  }
+    content: "\2197";
+    font-size: 1em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
 
 
+/*accordion*/
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
@@ -403,38 +405,61 @@ img {
     transition: max-height 0.2s ease-out;
     font-size: 18px;
   }
-/*Link*/
-.text-link{
-    text-underline-position:auto;
-    transition: all 0.3s;
-}
 
-.text-link:hover{
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: white;
+    cursor: pointer;
+    text-align: left;
+    font-family: "inter", Helvetica, sans-serif;
+    padding:0px;
+    font-size: 20px;
+    line-height: 35px;
+    color: #04535E;
+    margin-bottom:15px;
+
+    border: none;
+    outline: none;
+
+   
+    text-decoration: underline;
     text-underline-position:under;
-    transition: all 0.3s;
+  
+  
+  }
 
-}
-
-.int-link:after {
+  .accordion:hover {
+    color:#000000;
+    -webkit-text-decoration: double underline;
+  }
+  
+/* "plus" sign (+) after accordion */
+  .accordion:after {  
     display: inline-block;
-    content: "\2192";
-    text-decoration: none;
-    transition: margin-left 0.3s ease-in-out;
-    margin-left: 10px;
-}
+    content: '    \002B';
+    color: #04535E;
+    font-size: 24px;
+    text-decoration:none;
+    margin-left:10px;
+    -webkit-transform: rotate(-180deg);
+    transform-origin: 50% 55%;
+    transition: -webkit-transform 0.4s ease-out;
+    line-height: 25px;
+  }
 
-.int-link:hover::after {
-    margin-left: 20px;
-    transition: margin-left 0.3s ease-in-out;
- 
 
-}
-
-.ext-link:after {
+  .accordion:hover::after{
     display: inline-block;
-    content: "\2197";
-    font-size: 1em;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
+    -webkit-transform: rotate(0deg);
+    transition: -webkit-transform 0.4s ease-out;
+  }
+
+  .active:after {
+    display: inline-block;
+    color: #04535E;
+    content: "    \2212"; /* Unicode character for "minus" sign (-) */
+  }
+
+
