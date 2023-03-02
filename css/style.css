@@ -45,7 +45,7 @@ a {
     color: #04535E;
 
     text-decoration: underline;
-
+    text-decoration-thickness: 1px;
 }
 
 h1 {
@@ -108,14 +108,8 @@ cite {
     font-style: normal;
 }
 
-.a-text {
-    font-family: "inter", Helvetica, sans-serif;
-    text-decoration: underline;
-}
 
-.a-text:hover {
-    font-weight: bold;
-}
+
 
 
 /*layouts*/
@@ -308,8 +302,6 @@ img {
 }
 
 
-
-
 .testimonial {
 
     width: 900px;
@@ -348,4 +340,101 @@ img {
     min-height: 200px;
     border-radius: 50%;
 
+}
+
+
+/*accordion*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: white;
+    cursor: pointer;
+    text-align: left;
+    font-family: "inter", Helvetica, sans-serif;
+    padding:0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: #04535E;
+
+    border: none;
+    outline: none;
+    transition: all 0.4s;
+    text-underline-position:auto;
+    text-decoration: underline;
+  
+  }
+  
+
+  .accordion:after {
+    display: inline-block;
+    content: '    \002B'; /* Unicode character for "plus" sign (+) */
+    color: #04535E;
+    font-size: 24px;
+    text-decoration:none;
+    margin-left:10px;
+    -webkit-transform: rotate(-180deg);
+    transform-origin: 50% 55%;
+    transition: all 0.4s ease-out;
+    vertical-align:top;
+    line-height: 26px;
+  }
+
+
+  .accordion:hover::after{
+    display: inline-block;
+    -webkit-transform: rotate(0deg);
+    transition: all 0.4s ease-out;
+  }
+
+  .active:after {
+    display: inline-block;
+    color: #04535E;
+    content: "    \2212"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 18px;
+  }
+/*Link*/
+.text-link{
+    text-underline-position:auto;
+    transition: all 0.3s;
+}
+
+.text-link:hover{
+    text-underline-position:under;
+    transition: all 0.3s;
+
+}
+
+.int-link:after {
+    display: inline-block;
+    content: "\2192";
+    text-decoration: none;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+.int-link:hover::after {
+    margin-left: 20px;
+    transition: margin-left 0.3s ease-in-out;
+ 
+
+}
+
+.ext-link:after {
+    display: inline-block;
+    content: "\2197";
+    font-size: 1em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
