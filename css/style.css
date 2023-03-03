@@ -37,7 +37,7 @@ body {
 
 }
 
-.body-small{
+.body-small {
     font-size: 18px;
 }
 
@@ -100,14 +100,42 @@ blockquote {
     font-weight: 700;
     font-size: 30px;
     line-height: 150%;
-    margin: 0px 0px 30px 0px;
+    margin: 40px auto 40px auto;
 }
+
+@media only screen and (max-width: 62rem) {
+    blockquote {
+        margin: 0px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 43rem) {
+    blockquote {
+        margin: 0px;
+        font-size: 20px;
+    }
+}
+
+
 
 cite {
     font-weight: 400;
     font-size: 24px;
-    line-height: 150%;
+    line-height: 1.5;
     font-style: normal;
+}
+
+@media only screen and (max-width: 62rem) {
+    cite {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 43rem) {
+    cite {
+        font-size: 14px;
+    }
 }
 
 /* Responsive Typography*/
@@ -131,7 +159,8 @@ cite {
     h4 {
         font-size: 26px;
     }
-    .body-small{
+
+    .body-small {
         font-size: 16px;
     }
 }
@@ -156,11 +185,37 @@ cite {
     h4 {
         font-size: 24px;
     }
-    .body-small{
+
+    .body-small {
         font-size: 12px;
     }
 }
 
+@media only screen and (max-width: 30rem) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .body-small {
+        font-size: 12px;
+    }
+}
 
 /*layouts*/
 
@@ -186,13 +241,13 @@ cite {
 
 @media only screen and (max-width: 62rem) {
     .background {
-margin:-30px -300px;
+        margin: -30px -300px;
     }
 }
 
 @media only screen and (max-width: 43rem) {
     .background {
-margin:-150px -300px;
+        margin: -150px -300px;
     }
 }
 
@@ -209,6 +264,13 @@ margin:-150px -300px;
     box-shadow: 0px 10px 70px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
 
+}
+
+@media only screen and (max-width: 43rem) {
+    .page {
+        padding: 40px 5vw;
+        margin: 0 auto 30px auto;
+    }
 }
 
 .page__content {
@@ -283,7 +345,7 @@ nav {
     padding: 0px;
     gap: 40px;
     line-height: 18px;
-    width:66%; 
+    width: 66%;
     max-width: 671px;
 
     flex: none;
@@ -293,13 +355,14 @@ nav {
 
 @media only screen and (max-width: 43rem) {
     .homepage__hero-description {
-    width: 100%; 
-    gap: 9%;
-}}
+        width: 100%;
+        gap: 9%;
+    }
+}
 
 
-.homepage__hero-description__titles{
-margin-bottom:30px;
+.homepage__hero-description__titles {
+    margin-bottom: 30px;
 }
 
 .homepage__hero-description-1 {
@@ -339,13 +402,16 @@ img {
 }
 
 .image-s {
-    max-width: 60vw;
+    width: 60vw;
+    max-width: 900px;
     margin: 0 auto 60px auto;
     border-radius: 5px;
 }
 
+
+
 .image-m {
-    max-width: 75vw;
+    width: 75vw;
     max-width: 1140px;
     margin: 0 auto 60px auto;
     border-radius: 5px;
@@ -359,6 +425,26 @@ img {
 }
 
 
+@media only screen and (max-width: 62rem) {
+
+    .image-s,
+    .image-m,
+    .image-l {
+        width: 75vw;
+        margin: 0 auto 40px auto;
+    }
+}
+
+
+@media only screen and (max-width: 43rem) {
+
+    .image-s,
+    .image-m,
+    .image-l {
+        width: 90%;
+        margin: 0 auto 40px auto;
+    }
+}
 
 
 /*cards*/
@@ -376,6 +462,20 @@ img {
     width: 900px;
     margin: 100px auto 100px auto;
 
+}
+
+
+@media only screen and (max-width: 62rem) {
+    .testimonial {
+        width: 90%;
+        margin: 80px auto 80px auto;
+    }
+}
+
+@media only screen and (max-width: 43rem) {
+    .testimonial {
+        margin: 40px auto 40px auto;
+    }
 }
 
 .quote__container {
@@ -411,7 +511,11 @@ img {
 
 }
 
-
+@media only screen and (max-width: 62rem) {
+    .contacts__avatar {
+        margin: 30px auto 30px;
+    }
+}
 
 /*Links*/
 a {
@@ -504,7 +608,6 @@ a:hover {
     text-decoration: underline;
     text-underline-position: under;
 
-
 }
 
 .accordion:hover {
@@ -544,13 +647,34 @@ a:hover {
 
 
 @media only screen and (max-width: 62rem) {
-    .accordion{
-    font-size: 18px;
-}
+    .accordion {
+        font-size: 18px;
+    }
+
+    .accordion:after {
+        font-size: 20px;
+    }
 }
 
-@media only screen and(max-width: 43rem) {
-    .accordion{
-    font-size: 16px;
+
+@media only screen and (max-width: 43rem) {
+    .accordion {
+        font-size: 16px;
+    }
+
+    .accordion:after {
+        font-size: 18px;
+    }
 }
+
+
+@media only screen and (max-width: 30rem) {
+
+    .accordion {
+        font-size: 14px;
+    }
+
+    .accordion:after {
+        font-size: 16px;
+    }
 }

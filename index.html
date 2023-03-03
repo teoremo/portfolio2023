@@ -147,9 +147,13 @@
             </div>
 
         </div>
-
         <div class="image-s">
-            <img aria-hidden="true" src="src/images/homepage__hero-image.jpg" alt="">
+            <picture>
+                <source srcset="src/images/homepage__hero-image-s.jpg" media="(max-width: 62rem)" />
+        
+                <img src="src/images/homepage__hero-image.jpg" media="(min-width: 62rem)" />
+        
+            </picture>
         </div>
 
         <div class="page">
@@ -370,13 +374,14 @@
         </div>
 
         <div class="page">
-            <div class="contacts">
+            
                 <h2>
                     Let’s chat
                 </h2>
                 <img class="contacts__avatar" aria-hidden="true" src="src/images/avatar.jpg"
                     alt="" "
 					/>
+                    <div class="contacts">
                    <p>
                     If you’d like to discuss how we could work together, or simply if any of the above resonates and you’d like to chat further, feel free to <a class=" text-link"
                     href="mailto:hello@teoremo.com">email me</a> or to <a class="text-link"
