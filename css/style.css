@@ -368,6 +368,12 @@ nav {
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 43rem) {
+.homepage__hero-description__titles {
+    margin-bottom: 20px;
+}
+
+
 .homepage__hero-description-1 {
 
     flex: none;
