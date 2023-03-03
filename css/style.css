@@ -31,18 +31,15 @@ body {
     line-height: 1.5;
     spacing: -0.017em;
 
-
-
     color: #04535E;
     margin: 0;
     padding: 0;
 
 }
 
-p {
-    padding-bottom: 5px;
+.body-small{
+    font-size: 18px;
 }
-
 
 h1 {
     font-family: "inter", Helvetica, sans-serif;
@@ -50,9 +47,10 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
+    line-height: 1.1;
     color: #04535E;
     padding: 0;
-    margin: 0;
+    margin: 0 0 12px;
 }
 
 h2 {
@@ -95,6 +93,9 @@ h4 {
 
 }
 
+
+
+
 blockquote {
     font-weight: 700;
     font-size: 30px;
@@ -110,30 +111,56 @@ cite {
 }
 
 /* Responsive Typography*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 62rem) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 26px;
+    }
+    .body-small{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 43rem) {
     body {
         font-size: 16px;
     }
 
-    h1{
-        font-size: 35px;
+    h1 {
+        font-size: 45px;
     }
 
-
-    h2{
+    h2 {
         font-size: 28px;
     }
 
-
-    h3{
+    h3 {
         font-size: 20px;
     }
 
-
-    h4{
+    h4 {
         font-size: 24px;
     }
+    .body-small{
+        font-size: 12px;
+    }
 }
+
 
 /*layouts*/
 
@@ -157,9 +184,20 @@ cite {
     pointer-events: none;
 }
 
+@media only screen and (max-width: 62rem) {
+    .background {
+margin:-30px -300px;
+    }
+}
+
+@media only screen and (max-width: 43rem) {
+    .background {
+margin:-150px -300px;
+    }
+}
+
 
 .page {
-
     z-index: 2;
 
     padding: 60px 7.5vw;
@@ -185,7 +223,7 @@ cite {
 nav {
 
     height: 70px;
-    margin: 20px auto 40px auto;
+    margin: 2vh auto 1vh auto;
     width: 85%;
     max-width: 1134px;
     display: flex;
@@ -243,32 +281,38 @@ nav {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 26px;
+    gap: 40px;
     line-height: 18px;
     width:66%; 
     max-width: 671px;
-
 
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
+@media only screen and (max-width: 43rem) {
+    .homepage__hero-description {
+    width: 100%; 
+    gap: 9%;
+}}
+
+
 .homepage__hero-description__titles{
 margin-bottom:30px;
 }
 
 .homepage__hero-description-1 {
-    width: 206px;
 
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
-.homepage__hero-description-2 {
-    width: 206px;
 
+
+
+.homepage__hero-description-2 {
 
     flex: none;
     order: 1;
@@ -437,7 +481,6 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size: 18px;
 }
 
 
@@ -496,4 +539,18 @@ a:hover {
     display: inline-block;
     color: #04535E;
     content: "    \2212";
+}
+
+
+
+@media only screen and (max-width: 62rem) {
+    .accordion{
+    font-size: 18px;
+}
+}
+
+@media only screen and(max-width: 43rem) {
+    .accordion{
+    font-size: 16px;
+}
 }
