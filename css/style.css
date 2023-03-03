@@ -20,6 +20,8 @@ html
     background: #ff0000;
 }
 
+
+
 body {
     font-family: 'Inter', Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
@@ -224,6 +226,7 @@ cite {
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
+    scroll-behavior:smooth;
 
 
 }
@@ -492,7 +495,7 @@ img {
 
 
 /*Contacts*/
-.contacts {
+.contacts__text {
     max-width: 786px;
     margin-bottom: 40px;
 
@@ -525,7 +528,7 @@ a {
     cursor: pointer;
 
     -webkit-text-decoration: underline;
-    text-underline-position: under;
+    text-underline-offset: 3px;
 }
 
 a:hover {
@@ -534,13 +537,6 @@ a:hover {
 
 }
 
-.text-link {}
-
-.text-link:hover {
-    -webkit-text-decoration: double underline;
-
-
-}
 
 .int-link:hover {
     -webkit-text-decoration: double underline;
@@ -606,7 +602,7 @@ a:hover {
 
 
     text-decoration: underline;
-    text-underline-position: under;
+    text-underline-offset: 3px;
 
 }
 
