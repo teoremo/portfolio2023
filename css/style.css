@@ -25,7 +25,7 @@ html
 body {
     font-family: 'Inter', Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+
 
     font-style: normal;
     font-weight: 400;
@@ -36,6 +36,11 @@ body {
     color: #04535E;
     margin: 0;
     padding: 0;
+
+}
+
+p {
+    margin-top: 0;
 }
 
 .body-small {
@@ -44,6 +49,7 @@ body {
 
 h1 {
     font-family: "inter", Helvetica, sans-serif;
+    -webkit-font-feature-settings: "ss01";
     font-feature-settings: "ss01";
     font-style: normal;
     font-weight: 700;
@@ -64,7 +70,6 @@ h2 {
 
     margin-bottom: 30px;
     padding: 0;
-    margin: 0;
 
 
 }
@@ -223,7 +228,7 @@ cite {
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 
 
 }
@@ -261,7 +266,9 @@ cite {
     max-width: 1134px;
     position: relative;
     background: #FFFFFF;
+    -webkit-box-shadow: 0px 10px 70px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 10px 70px rgba(0, 0, 0, 0.05);
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 
 }
@@ -288,9 +295,16 @@ nav {
     margin: 2vh auto 1vh auto;
     width: 85%;
     max-width: 1134px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 
 }
@@ -301,7 +315,6 @@ nav {
 }
 
 .page__content__item {
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -313,8 +326,15 @@ nav {
 }
 
 .homepage__hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
@@ -326,6 +346,8 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
 }
@@ -333,14 +355,28 @@ nav {
 .homepage__hero-title {
     max-width: 902px;
 
+    -webkit-box-flex: 0;
+
+    -ms-flex: none;
+
     flex: none;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
     order: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
 }
 
 .homepage__hero-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
@@ -348,8 +384,15 @@ nav {
     width: 66%;
     max-width: 671px;
 
+    -webkit-box-flex: 0;
+
+    -ms-flex: none;
+
     flex: none;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
+    -ms-flex-positive: 0;
     flex-grow: 0;
 }
 
@@ -366,16 +409,21 @@ nav {
 }
 
 @media only screen and (max-width: 43rem) {
-.homepage__hero-description__titles {
-    margin-bottom: 20px;
-}
+    .homepage__hero-description__titles {
+        margin-bottom: 20px;
+    }
 }
 
 .homepage__hero-description-1 {
 
+    -webkit-box-flex: 0;
+    -ms-flex: none;
     flex: none;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
     order: 0;
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 1;
 }
 
 
@@ -383,9 +431,14 @@ nav {
 
 .homepage__hero-description-2 {
 
+    -webkit-box-flex: 0;
+    -ms-flex: none;
     flex: none;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
-    flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 1;
 }
 
 
@@ -400,9 +453,14 @@ img {
     left: 0px;
     width: 100%;
 
+    -o-object-fit: cover;
+
     object-fit: cover;
+    -o-object-position: center center;
     object-position: center center;
     opacity: 1;
+    -webkit-transition-delay: 500ms;
+    -o-transition-delay: 500ms;
     transition-delay: 500ms;
 
 }
@@ -455,6 +513,7 @@ img {
 
 /*cards*/
 .homepage__card {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 786px;
     padding-bottom: 20px;
@@ -495,8 +554,6 @@ img {
 }
 
 
-
-
 /*Contacts*/
 .contacts__text {
     max-width: 786px;
@@ -530,12 +587,13 @@ a {
     color: #04535E;
     cursor: pointer;
 
-    -webkit-text-decoration: underline;
+    text-decoration: underline;
     text-underline-offset: 3px;
 }
 
 a:hover {
     -webkit-text-decoration: double underline;
+    text-decoration: double underline;
     color: #000000;
 
 }
@@ -543,6 +601,7 @@ a:hover {
 
 .int-link:hover {
     -webkit-text-decoration: double underline;
+    text-decoration: double underline;
     padding-bottom: 20px;
 
 }
@@ -553,6 +612,8 @@ a:hover {
     text-decoration: none;
 
     margin-left: 10px;
+    -webkit-transition: margin-left 0.3s ease-in-out;
+    -o-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
 }
 
@@ -561,6 +622,8 @@ a:hover {
 
 .int-link:hover::after {
     margin-left: 20px;
+    -webkit-transition: margin-left 0.3s ease-in-out;
+    -o-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
 }
 
@@ -583,6 +646,8 @@ a:hover {
     background-color: white;
     max-height: 0;
     overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
     transition: max-height 0.2s ease-out;
 }
 
@@ -607,11 +672,13 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
 
+
 }
 
 .accordion:hover {
     color: #000000;
     -webkit-text-decoration: double underline;
+    text-decoration: double underline;
 }
 
 /* "plus" sign (+) after accordion */
@@ -623,9 +690,17 @@ a:hover {
     text-decoration: none;
     margin-left: 10px;
     -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transform-origin: 50% 55%;
+    -ms-transform-origin: 50% 55%;
     transform-origin: 50% 55%;
-    transition: -webkit-transform 0.4s ease-out;
     line-height: 25px;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: -webkit-transform 0.4s ease-out;
+    -o-transition: transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
 }
 
 
@@ -633,7 +708,8 @@ a:hover {
     display: inline-block;
     color: #000000;
     -webkit-transform: rotate(0deg);
-    transition: -webkit-transform 0.4s ease-out;
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 /* "minus" sign (-) after accordion */
