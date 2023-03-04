@@ -195,7 +195,7 @@ cite {
     }
 }
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 25rem) {
     body {
         font-size: 14px;
     }
@@ -423,7 +423,7 @@ nav {
     -ms-flex-order: 0;
     order: 0;
     -ms-flex-positive: 0;
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
 
@@ -438,10 +438,15 @@ nav {
     -ms-flex-order: 1;
     order: 1;
     -ms-flex-positive: 0;
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
 
+@media only screen and (max-width: 30rem) {
+    .homepage__hero-description-1, .homepage__hero-description-2 {
+        flex-grow: 1;
+}
+}
 
 
 
