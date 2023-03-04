@@ -31,12 +31,11 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
-    spacing: -0.017em;
+    letter-spacing: -0.017em;
 
     color: #04535E;
     margin: 0;
     padding: 0;
-
 }
 
 .body-small {
@@ -95,15 +94,13 @@ h4 {
 
 }
 
-
-
-
 blockquote {
     font-weight: 700;
     font-size: 30px;
     line-height: 150%;
     margin: 40px auto 40px auto;
 }
+
 
 @media only screen and (max-width: 62rem) {
     blockquote {
@@ -372,7 +369,7 @@ nav {
 .homepage__hero-description__titles {
     margin-bottom: 20px;
 }
-
+}
 
 .homepage__hero-description-1 {
 
@@ -668,7 +665,6 @@ a:hover {
         font-size: 18px;
     }
 }
-
 
 @media only screen and (max-width: 30rem) {
 
