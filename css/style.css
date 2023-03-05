@@ -234,10 +234,10 @@ cite {
 }
 
 
-.background-home{
-    margin: -30px -200px;    
+.background-home {
+    margin: -30px -200px;
     position: absolute;
-    
+
 
     width: 100%;
     max-width: 4000px;
@@ -247,7 +247,7 @@ cite {
 }
 
 
-.background-about{
+.background-about {
     margin: -300px 70px;
     position: absolute;
 
@@ -268,7 +268,7 @@ cite {
 
         width: 100%;
         max-width: 4000px;
-    
+
         z-index: -2;
         pointer-events: none;
     }
@@ -281,7 +281,7 @@ cite {
 
         width: 100%;
         max-width: 4000px;
-    
+
         z-index: -2;
         pointer-events: none;
     }
@@ -295,7 +295,7 @@ cite {
 
         width: 100%;
         max-width: 4000px;
-    
+
         z-index: -2;
         pointer-events: none;
     }
@@ -335,40 +335,54 @@ cite {
 
 
 
-nav {
 
-    height: 70px;
-    margin: 2vh auto 1vh auto;
-    width: 85%;
-    max-width: 1134px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
 
-}
-
-.nav__item {
-    margin: 0 20px 0 20px;
-    line-height: 2;
-}
 
 .page__content__item {
     margin-bottom: 20px;
 }
+
+
+
+/*Navigation*/
+
+nav {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+
+    margin: 5vh auto 1vh auto;
+    width: 90%;
+    max-width: 1134px;
+    z-index: 5;
+    text-align: right;
+    background-color: transparent;
+}
+
+.nav__menu__panel {
+
+    margin-top: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+
+.nav__item {
+    margin-right: 1.4em;
+}
+
 
 /*Homepage*/
 .homepage__hero-wrapper {
     height: 80vh;
     vertical-align: middle;
     position: relative;
+    margin-top: 70px;
 }
 
 .homepage__hero-container {
@@ -489,12 +503,26 @@ nav {
 
 
 @media only screen and (max-width: 30rem) {
-    .homepage__hero-description-1, .homepage__hero-description-2 {
-        flex-grow: 1;
-}
+
+    .homepage__hero-description-1,
+    .homepage__hero-description-2 {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+    }
 }
 
+/*About*/
 
+.about__hero-wrapper {
+    margin-top: 170px;
+}
+
+@media only screen and (max-width: 30rem) {
+    .about__hero-wrapper {
+        margin-top: 140px;
+    }
+}
 
 /*images*/
 
@@ -645,7 +673,6 @@ a {
 a:hover {
     -webkit-text-decoration: double underline;
     text-decoration: double underline;
-    color: #000000;
 
 }
 
@@ -694,7 +721,7 @@ a:hover {
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0px;
-    background-color: white;
+
     max-height: 0;
     overflow: hidden;
     -webkit-transition: max-height 0.2s ease-out;
@@ -706,7 +733,7 @@ a:hover {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: white;
+    background-color: transparent;
     cursor: pointer;
     text-align: left;
     font-family: "inter", Helvetica, sans-serif;
@@ -727,7 +754,7 @@ a:hover {
 }
 
 .accordion:hover {
-    color: #000000;
+
     -webkit-text-decoration: double underline;
     text-decoration: double underline;
 }
@@ -757,7 +784,6 @@ a:hover {
 
 .accordion:hover::after {
     display: inline-block;
-    color: #000000;
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);

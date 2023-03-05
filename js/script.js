@@ -1,4 +1,4 @@
-/*Accardion for 'show more' button begins*/
+/*Accordion for 'show more' button begins*/
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -13,7 +13,8 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
-/* Accardion for 'show more' button ends*/
+/* Accordion for 'show more' button ends*/
+
 
 /*Cal element-click embed code begins*/
 

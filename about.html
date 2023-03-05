@@ -36,37 +36,40 @@
         <div class="background-about">
 
             <svg width="1573" height="4419" viewBox="0 0 1573 4419" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M302.941 -499C-127.244 291.182 1420.07 1767.55 1342.82 1069.36C1265.58 371.182 -186.939 922 32.5617 2382.5C252.063 3843 1596.7 5016.43 1562.26 5058.5" stroke="url(#paint0_linear_333_156)" stroke-width="20"/>
+                <path
+                    d="M302.941 -499C-127.244 291.182 1420.07 1767.55 1342.82 1069.36C1265.58 371.182 -186.939 922 32.5617 2382.5C252.063 3843 1596.7 5016.43 1562.26 5058.5"
+                    stroke="url(#paint0_linear_333_156)" stroke-width="20" />
                 <defs>
-                <linearGradient id="paint0_linear_333_156" x1="634.509" y1="-119.5" x2="2293" y2="541.74" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#E2B101"/>
-                <stop offset="1" stop-color="#C30000"/>
-                </linearGradient>
+                    <linearGradient id="paint0_linear_333_156" x1="634.509" y1="-119.5" x2="2293" y2="541.74"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E2B101" />
+                        <stop offset="1" stop-color="#C30000" />
+                    </linearGradient>
                 </defs>
-                </svg>
-                
-
-
+            </svg>
 
         </div>
 
 
         <nav>
-
-            <a class="nav__item" href="/index.html">home</a>
-            <a class="nav__item" href="/about.html">about</a>
+            <button class="accordion">menu</button>
+            <div class="panel nav__menu__panel">
+                <a class="nav__item" href="/index.html">home</a>
+                <a class="nav__item" href="/about.html">about</a>
+            </div>
         </nav>
 
+        <div class="about__hero-wrapper">
+            <div class="image-m ">
+                <picture>
+                    <source srcset="src/images/about__hero-image-s.jpg" media="(max-width: 62rem)" />
 
+                    <img src="src/images/about__hero-image.jpg" media="(min-width: 62rem)" />
 
-        <div class="image-s">
-            <picture>
-                <source srcset="src/images/about__hero-image-s.jpg" media="(max-width: 62rem)" />
-
-                <img src="src/images/about__hero-image.jpg" media="(min-width: 62rem)" />
-
-            </picture>
+                </picture>
+            </div>
         </div>
+
         <div class="page">
             <div class="page__content">
                 <h2>About me</h2>
@@ -146,8 +149,10 @@
             <img class="contacts__avatar" aria-hidden="true" src="/src/images/avatar.jpg" alt="" />
             <div class=" contacts__text">
                 <p>
-                    If you’d like to discuss how we could work together, or simply if any of the above resonates and you’d
-                    like to chat further, feel free to <a class=" text-link" href="mailto:hello@teoremo.com">email me</a> or
+                    If you’d like to discuss how we could work together, or simply if any of the above resonates and
+                    you’d
+                    like to chat further, feel free to <a class=" text-link" href="mailto:hello@teoremo.com">email
+                        me</a> or
                     to <a data-cal-link="teoremo/15min">book a
                         call</a>.<br />
                     I’m also on <a href="http://www.linkedin.com/in/teoremo" target="_blank">Linkedin</a>, or you can <a
