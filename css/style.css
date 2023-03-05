@@ -233,8 +233,11 @@ cite {
 
 }
 
-.background {
+
+.background-home{
+    margin: -30px -200px;    
     position: absolute;
+    
 
     width: 100%;
     max-width: 4000px;
@@ -243,26 +246,60 @@ cite {
     pointer-events: none;
 }
 
-.background-home{
-    margin: -30px -200px;    
-}
 
 .background-about{
-    margin: -300px 200px;
+    margin: -300px 70px;
+    position: absolute;
+
+
+
+    width: 100%;
+    max-width: 4000px;
+
+    z-index: -2;
+    pointer-events: none;
+
 }
 
 @media only screen and (max-width: 62rem) {
-    .background.home {
+    .background-home {
         margin: -30px -300px;
+        position: absolute;
+
+        width: 100%;
+        max-width: 4000px;
+    
+        z-index: -2;
+        pointer-events: none;
     }
 }
 
 @media only screen and (max-width: 43rem) {
-    .background.home {
+    .background-home {
         margin: -150px -300px;
+        position: absolute;
+
+        width: 100%;
+        max-width: 4000px;
+    
+        z-index: -2;
+        pointer-events: none;
     }
 }
 
+
+@media only screen and (max-width: 62rem) {
+    .background-about {
+        margin: -200px -30px;
+        position: absolute;
+
+        width: 100%;
+        max-width: 4000px;
+    
+        z-index: -2;
+        pointer-events: none;
+    }
+}
 
 
 
