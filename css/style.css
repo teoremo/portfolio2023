@@ -248,7 +248,7 @@ cite {
 
 
 .background-about {
-    margin: -300px 70px;
+    margin: -300px -100px;
     position: absolute;
 
 
@@ -290,7 +290,7 @@ cite {
 
 @media only screen and (max-width: 62rem) {
     .background-about {
-        margin: -200px -30px;
+        margin: -200px -150px;
         position: absolute;
 
         width: 100%;
