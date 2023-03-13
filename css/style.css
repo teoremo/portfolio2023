@@ -84,7 +84,7 @@ h3 {
     font-family: "inter", Helvetica, sans-serif;
 
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     color: #528187;
     padding: 0;
@@ -702,17 +702,6 @@ a {
     text-underline-offset: 3px;
 }
 
-a:hover {
-    -webkit-text-decoration: double underline;
-    text-decoration: double underline;
-
-}
-
-.int-link{
-    padding:0px;
-    font-weight:600;
-}
-
 .int-link:hover {
     -webkit-text-decoration: double underline;
     text-decoration: double underline;
@@ -725,7 +714,7 @@ a:hover {
     content: "\2192";
     text-decoration: none;
 
-    margin-left: 10px;
+    margin-left: 13px;
     -webkit-transition: margin-left 0.3s ease-in-out;
     -o-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
@@ -742,14 +731,83 @@ a:hover {
 }
 
 
+a:hover {
+    -webkit-text-decoration: double underline;
+    text-decoration: double underline;
+
+}
+
+.down-link{
+    padding:0px;
+    font-weight:400;
+}
+
+.down-link:hover {
+    -webkit-text-decoration: double underline;
+    text-decoration: double underline;
+
+
+}
+
+.down-link:after {
+    display: inline-block;
+    content: "\2193";
+    text-decoration: none;
+    vertical-align: baseline;
+
+    margin-left:10px;
+
+    -webkit-transition: translate 0.3s ease-in-out;
+    -o-transition: translate 0.3s ease-in-out;
+    transition: translate 0.3s ease-in-out;
+}
+
+
+.down-link:hover::after {
+ 
+ translate: 0 4px;
+    -webkit-transition: translate 0.3s ease-in-out;
+    -o-transition: translate 0.3s ease-in-out;
+    transition: translate 0.3s ease-in-out;
+}
+
+
+.ext-link{
+    padding:0px;
+    font-weight:400;
+}
+
+.ext-link:hover {
+    -webkit-text-decoration: double underline;
+    text-decoration: double underline;
+
+
+}
+
 .ext-link:after {
     display: inline-block;
     content: "\2197";
-    font-size: 1em;
-    line-height: 0;
-    position: relative;
+    text-decoration: none;
     vertical-align: baseline;
+
+    margin-left:10px;
+
+    translate: 0 1px;
+    -webkit-transition: translate 0.3s ease-in-out;
+    -o-transition: translate 0.3s ease-in-out;
+    transition: translate 0.3s ease-in-out;
 }
+
+
+.ext-link:hover::after {
+ 
+ translate: 4px -2px;
+    -webkit-transition: translate 0.3s ease-in-out;
+    -o-transition: translate 0.3s ease-in-out;
+    transition: translate 0.3s ease-in-out;
+}
+
+
 
 
 /*accordion*/
@@ -797,7 +855,7 @@ top: 552px;
     font-family: "inter", Helvetica, sans-serif;
     padding: 0px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 35px;
     color: #04535E;
     margin-bottom: 15px;
@@ -832,7 +890,6 @@ top: 552px;
     -webkit-transform-origin: 50% 55%;
     -ms-transform-origin: 50% 55%;
     transform-origin: 50% 55%;
-    line-height: 25px;
     -webkit-transition: -webkit-transform 0.4s ease-out;
     transition: -webkit-transform 0.4s ease-out;
     -o-transition: transform 0.4s ease-out;
