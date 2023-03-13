@@ -48,6 +48,11 @@ p {
     font-size: 18px;
 }
 
+strong {
+    font-weight: 600;
+
+}
+
 h1 {
     font-family: "inter", Helvetica, sans-serif;
     -webkit-font-feature-settings: "ss01";
@@ -55,10 +60,10 @@ h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 42px;
-    line-height: 1.1;
+    line-height: 1.5;
     color: #04535E;
     padding: 0;
-    margin: 0 0 12px;
+    margin: 0;
 }
 
 h2 {
@@ -68,8 +73,8 @@ h2 {
     font-weight: 500;
     font-size: 28px;
     color: #04535E;
-    line-height: 1.1;
-    margin-bottom: 30px;
+    line-height: 1.5;
+    margin: 0;
     padding: 0;
 
 
@@ -79,11 +84,12 @@ h3 {
     font-family: "inter", Helvetica, sans-serif;
 
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 18px;
     color: #528187;
     padding: 0;
     text-transform: uppercase;
+    margin:0 0 30px;
 }
 
 h4{
@@ -311,8 +317,10 @@ align-items: flex-start;
 padding: 0px;
 gap: 45px;
 
-width: 85%;
+width: 902px;
 height: 491px;
+margin:auto;
+
 
 flex: none;
 order: 0;
@@ -326,7 +334,7 @@ flex-direction: column;
 justify-content: space-between;
 align-items: flex-start;
 padding: 0px;
-gap: 74px;
+
 
 width: 438px;
 height: 489px;
@@ -341,7 +349,6 @@ flex-grow: 0;
     width: 435px;
     height: 491px;
     
-    background: grey;
     border-radius: 5px;
     
     flex: none;
@@ -352,7 +359,7 @@ flex-grow: 0;
 .page {
     z-index: 2;
 
-    padding: 60px 7.5vw;
+    padding: 80px 7.5vw;
     margin: 0 auto 60px auto;
     width: 90%;
     max-width: 1134px;
@@ -375,7 +382,6 @@ flex-grow: 0;
 .page__content {
 
     max-width: 786px;
-    margin-bottom: 40px;
 
 }
 
@@ -443,7 +449,7 @@ nav {
     -ms-flex-align: start;
     align-items: flex-start;
     padding: 0px;
-    gap: 40px;
+    gap: 30px;
     width: 85%;
     max-width: 902px;
     max-height: 205px;
@@ -520,6 +526,14 @@ img {
     transition-delay: 500ms;
 
 }
+
+.image-page{
+    width: 60vw;
+    max-width: 786px;
+    margin: 60px auto 60px auto;
+
+}
+
 
 .image-s {
     width: 60vw;
@@ -617,7 +631,6 @@ flex-direction: row;
 justify-content: space-between;
 align-items: flex-start;
 padding: 0px;
-gap: 161px;
 
 width: 902px;
 height: 323px;    
@@ -634,7 +647,6 @@ height: 323px;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
-    gap: 66px;
     
     width: 438px;
     height: 320px;
@@ -644,6 +656,15 @@ height: 323px;
     flex-grow: 0;
 
     margin-bottom: 40px;
+
+}
+
+.contacts__text__links{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 40px;
 
 }
 
@@ -687,11 +708,15 @@ a:hover {
 
 }
 
+.int-link{
+    padding:0px;
+    font-weight:600;
+}
 
 .int-link:hover {
     -webkit-text-decoration: double underline;
     text-decoration: double underline;
-    padding-bottom: 20px;
+
 
 }
 
@@ -740,6 +765,28 @@ a:hover {
     transition: max-height 0.2s ease-out;
 }
 
+.skills{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 26px;
+
+width: 902px;
+height: 150px;
+left: 0px;
+top: 552px;
+}
+
+.skills-1{
+    width: 438px;
+    margin:0px;
+}
+
+.skills-2{
+    width: 438px;
+    margin:0px;
+}
 
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -750,6 +797,7 @@ a:hover {
     font-family: "inter", Helvetica, sans-serif;
     padding: 0px;
     font-size: 20px;
+    font-weight: 600;
     line-height: 35px;
     color: #04535E;
     margin-bottom: 15px;
