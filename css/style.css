@@ -113,21 +113,6 @@ blockquote {
 }
 
 
-@media only screen and (max-width: 62rem) {
-    blockquote {
-        margin: 0px;
-        font-size: 24px;
-    }
-}
-
-@media only screen and (max-width: 43rem) {
-    blockquote {
-        margin: 0px;
-        font-size: 20px;
-    }
-}
-
-
 
 cite {
     font-weight: 400;
@@ -136,95 +121,9 @@ cite {
     font-style: normal;
 }
 
-@media only screen and (max-width: 62rem) {
-    cite {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 43rem) {
-    cite {
-        font-size: 14px;
-    }
-}
-
-/* Responsive Typography*/
-@media only screen and (max-width: 62rem) {
-    body {
-        font-size: 18px;
-    }
-
-    h1 {
-        font-size: 37px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
 
 
-    h4{font-size: 22px;
-    }
 
-    .body-small {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 43rem) {
-    body {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 14px;
-    }
-
-    h4{font-size: 16px;
-    }
-
-    .body-small {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 25rem) {
-    body {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 35px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 12px;
-    }
-
-    h4{font-size: 18px;
-    }
-
-
-    .body-small {
-        font-size: 12px;
-    }
-}
 
 /*layouts*/
 
@@ -268,57 +167,18 @@ cite {
 
 }
 
-@media only screen and (max-width: 62rem) {
-    .background-home {
-        margin: -30px -300px;
-        position: absolute;
-
-        width: 100%;
-        max-width: 4000px;
-
-        z-index: -2;
-        pointer-events: none;
-    }
-}
-
-@media only screen and (max-width: 43rem) {
-    .background-home {
-        margin: -150px -300px;
-        position: absolute;
-
-        width: 100%;
-        max-width: 4000px;
-
-        z-index: -2;
-        pointer-events: none;
-    }
-}
-
-
-@media only screen and (max-width: 62rem) {
-    .background-about {
-        margin: -200px -150px;
-        position: absolute;
-
-        width: 100%;
-        max-width: 4000px;
-
-        z-index: -2;
-        pointer-events: none;
-    }
-}
 
 
 .manifesto{
     display: flex;
 flex-direction: row;
 justify-content: space-between;
-align-items: flex-start;
+align-items: center;
 padding: 0px;
 gap: 45px;
-
-width: 902px;
-height: 491px;
+width:85%;
+max-width: 902px;
+max-height: 491px;
 margin:auto;
 
 
@@ -335,9 +195,9 @@ justify-content: space-between;
 align-items: flex-start;
 padding: 0px;
 
+width:32vw;
+max-width: 438px;
 
-width: 438px;
-height: 489px;
 
 
 flex: none;
@@ -359,7 +219,7 @@ flex-grow: 0;
 .page {
     z-index: 2;
 
-    padding: 80px 7.5vw;
+    padding: 80px 116px;
     margin: 0 auto 60px auto;
     width: 90%;
     max-width: 1134px;
@@ -372,12 +232,7 @@ flex-grow: 0;
 
 }
 
-@media only screen and (max-width: 43rem) {
-    .page {
-        padding: 40px 5vw;
-        margin: 0 auto 30px auto;
-    }
-}
+
 
 .page__content {
 
@@ -501,10 +356,10 @@ nav {
     margin-top: 170px;
 }
 
-@media only screen and (max-width: 30rem) {
-    .about__hero-wrapper {
-        margin-top: 140px;
-    }
+
+
+.page__content-about{
+    margin:30px 0 50px;
 }
 
 /*images*/
@@ -559,26 +414,27 @@ img {
 }
 
 
-@media only screen and (max-width: 62rem) {
 
-    .image-s,
-    .image-m,
-    .image-l {
-        width: 75vw;
-        margin: 0 auto 40px auto;
-    }
+
+
+
+
+
+/*lists*/
+
+ul {
+    padding:0;
+    list-style:none;
+    text-indent: -27px;
+    margin: 0 17px;
 }
 
-
-@media only screen and (max-width: 43rem) {
-
-    .image-s,
-    .image-m,
-    .image-l {
-        width: 90%;
-        margin: 0 auto 40px auto;
-    }
+ul li:before
+{
+    content: '\203A';
+    margin: 0 10px 0;
 }
+
 
 
 /*cards*/
@@ -600,18 +456,8 @@ img {
 }
 
 
-@media only screen and (max-width: 62rem) {
-    .testimonial {
-        width: 90%;
-        margin: 80px auto 80px auto;
-    }
-}
 
-@media only screen and (max-width: 43rem) {
-    .testimonial {
-        margin: 40px auto 40px auto;
-    }
-}
+
 
 .quote__container {
     width: 900px;
@@ -629,10 +475,10 @@ img {
     display: flex;
 flex-direction: row;
 justify-content: space-between;
-align-items: flex-start;
+align-items: center;
 padding: 0px;
 
-width: 902px;
+width: 100%;
 height: 323px;    
     
     flex: none;
@@ -648,7 +494,8 @@ height: 323px;
     align-items: flex-start;
     padding: 0px;
     
-    width: 438px;
+    width: 35vw;
+    max-width: 438px;
     height: 320px;
     
     flex: none;
@@ -676,20 +523,13 @@ gap: 40px;
     width: 322px;
 height: 323px;
 
-
-/* Inside auto layout */
-
 flex: none;
 order: 1;
 flex-grow: 0;
 
 }
 
-@media only screen and (max-width: 62rem) {
-    .contacts__avatar {
-        margin: 30px auto 30px;
-    }
-}
+
 
 /*Links*/
 a {
@@ -823,7 +663,7 @@ a:hover {
     transition: max-height 0.2s ease-out;
 }
 
-.skills{
+.panel__list{
     display: flex;
 flex-direction: row;
 align-items: flex-start;
@@ -831,20 +671,15 @@ padding: 0px;
 gap: 26px;
 
 width: 902px;
-height: 150px;
+
 left: 0px;
 top: 552px;
 }
 
-.skills-1{
+.panel__list-content{
     width: 438px;
-    margin:0px;
 }
 
-.skills-2{
-    width: 438px;
-    margin:0px;
-}
 
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -914,18 +749,212 @@ top: 552px;
 
 
 
-@media only screen and (max-width: 62rem) {
-    .accordion {
+
+@media only screen and (max-width: 1280px) {
+
+.panel__list{
+    display: block;
+    width: auto;
+}
+
+.panel__list-content{
+    width: auto;
+}
+    
+}
+
+
+/*RESPONSIVE LARGE*/
+
+@media only screen and (max-width: 1024px) {
+    body {
         font-size: 18px;
+    }
+
+    h1 {
+        font-size: 37px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+
+    h4{font-size: 22px;
+    }
+
+    .body-small {
+        font-size: 14px;
+    }
+
+    blockquote {
+        margin: 0px;
+        font-size: 24px;
+    }
+
+    cite {
+        font-size: 20px;
+    }
+
+    .background-home {
+        margin: -30px -300px;
+        position: absolute;
+
+        width: 100%;
+        max-width: 4000px;
+
+        z-index: -2;
+        pointer-events: none;
+    }
+
+    .background-about {
+        margin: -200px -150px;
+        position: absolute;
+
+        width: 100%;
+        max-width: 4000px;
+
+        z-index: -2;
+        pointer-events: none;
+    }
+
+
+    .image-s,
+    .image-m,
+    .image-l {
+        width: 75vw;
+        margin: 0 auto 40px auto;
+    }
+
+
+
+    .page {
+        padding:80px 7.5vw;
+    }
+
+    .testimonial {
+        width: 75%;
+        margin: 80px auto 80px auto;
+    }
+
+    .contacts__avatar {
+        margin: 30px auto 30px;
+        width: 250px;
+        height:250px;
+    }
+
+    .accordion {
+        font-size: 16px;
     }
 
     .accordion:after {
         font-size: 20px;
     }
+
+    .manifesto__pic{
+width:40vw;
+height:auto;
+    }
+
+    .manifesto__text{
+        width:35vw;
+    }
+
+
+
 }
 
 
-@media only screen and (max-width: 43rem) {
+/*RESPONSIVE MEDIUM */
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4{font-size: 16px;
+    }
+
+    .body-small {
+        font-size: 12px;
+    }
+
+
+
+    cite {
+        font-size: 14px;
+    }
+
+    blockquote {
+        margin: 0px;
+        font-size: 18px;
+    }
+
+    .background-home {
+        margin: -150px -300px;
+        position: absolute;
+
+        width: 100%;
+        max-width: 4000px;
+
+        z-index: -2;
+        pointer-events: none;
+    }
+
+    .page {
+        padding: 40px 5vw;
+        margin: 0 auto 30px auto;
+    }
+
+
+    .image-s,
+    .image-m,
+    .image-l {
+        width: 90%;
+        margin: 0 auto 40px auto;
+    }
+
+    .manifesto{
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .manifesto__text{
+        height:fit-content;
+        width:100%;
+        max-width: none;
+    }
+
+
+
+    .manifesto__pic {
+        width:100%;
+        height:100%;
+        order:-2;
+        }
+
+
+
+    .testimonial {
+        margin: 40px auto 40px auto;
+    }
+
     .accordion {
         font-size: 16px;
     }
@@ -933,9 +962,25 @@ top: 552px;
     .accordion:after {
         font-size: 18px;
     }
+
+.contacts{
+    flex-direction: column-reverse;
+    height:auto;
+}
+.contacts__text{
+    height:auto;
+    width: 100%;
+    max-width: none;
 }
 
-@media only screen and (max-width: 30rem) {
+}
+
+
+/*RESPONSIVE SMALL */
+
+
+
+@media only screen and (max-width: 480px) {
 
     .accordion {
         font-size: 14px;
@@ -943,5 +988,45 @@ top: 552px;
 
     .accordion:after {
         font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .about__hero-wrapper {
+        margin-top: 140px;
+    }
+}
+
+
+/*RESPONSIVE EXTRA SMALL*/
+
+
+@media only screen and (max-width: 360px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    h4{font-size: 18px;
+    }
+
+
+    .body-small {
+        font-size: 12px;
+    }
+    blockquote{
+        font-size:18px;
     }
 }
