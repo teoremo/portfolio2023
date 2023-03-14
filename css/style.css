@@ -380,10 +380,12 @@ img {
     -o-transition-delay: 500ms;
     transition-delay: 500ms;
 
+    border-radius: 5px;
+
 }
 
 .image-page{
-    width: 60vw;
+    width: 85%;
     max-width: 786px;
     margin: 60px auto 60px auto;
 
@@ -907,7 +909,7 @@ height:auto;
     }
 
     .background-home {
-        margin: -150px -300px;
+        margin: -50px -400px;
         position: absolute;
 
         width: 100%;
@@ -973,7 +975,9 @@ height:auto;
     max-width: none;
     gap:20px;
 }
-
+.image-page{
+    width:auto;
+}
 }
 
 
@@ -1005,6 +1009,8 @@ h4 {
         margin-top: 140px;
     }
 }
+
+
 
 
 /*RESPONSIVE EXTRA SMALL*/
