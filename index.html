@@ -32,19 +32,6 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-69BHQ9J7DV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-69BHQ9J7DV');
-    </script>
-
-
 
 </head>
 
@@ -123,6 +110,7 @@
             </div>
             <div class="manifesto__pic">
                 <picture>
+                    <source srcset="/src/images/homepage__hero-image-landscape-s.jpg" media="(max-width: 480px)" />
                     <source srcset="/src/images/homepage__hero-image-landscape.jpg" media="(max-width: 768px)" />
                     <source srcset="/src/images/homepage__hero-image-m.jpg" media="(max-width: 1024px)" />
                     <img src="/src/images/homepage__hero-image-portrait.jpg" media="(min-width: 1024px)"
@@ -201,7 +189,8 @@
 
                 <div class="image-page ">
                     <picture>
-                        <source srcset="src/images/creds__logos-s.png" media="(max-width: 768px)" />
+                        <source srcset="src/images/creds__logos-s.png" media="(max-width: 480px)" />
+                        <source srcset="src/images/creds__logos-m.png" media="(max-width: 768px)" />
 
                         <img alt="" src="src/images/creds__logos.png" media="(min-width: 768px)" />
 
@@ -410,6 +399,16 @@
 
     <!--Cabin Analytics-->
     <script async defer src="https://scripts.withcabin.com/hello.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-69BHQ9J7DV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-69BHQ9J7DV');
+    </script>
 
 </body>
 
