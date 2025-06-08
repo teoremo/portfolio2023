@@ -33,7 +33,7 @@ body {
     line-height: 1.5;
     letter-spacing: -0.017em;
 
-    color: #04535E;
+    color: #03272c;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -61,7 +61,7 @@ h1 {
     font-weight: 600;
     font-size: 42px;
     line-height: 1.5;
-    color: #04535E;
+    color:  #013b42;
     padding: 0;
     margin: 0;
 }
@@ -72,7 +72,7 @@ h2 {
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
-    color: #04535E;
+    color: #142e32;
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -97,8 +97,8 @@ h4 {
 
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    color: #04535E;
+    font-size: 30px;
+    color: #142e32;
     padding: 0;
 
     margin-bottom: 15px;
