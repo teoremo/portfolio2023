@@ -132,7 +132,7 @@ cite {
     z-index: 2;
 
     background-color: #F6F6F6;
-
+    background: radial-gradient(at 53% 38%, hsla(23, 100%, 50%, 0.193) 0px, transparent 50%), radial-gradient(at 71% 91%, hsla(132, 100%, 50%, 0.152), transparent 50%), radial-gradient(at 31% 91%, hsla(30, 100%, 50%, 0.147) 0px, transparent 50%);
     overflow: hidden;
     bottom: 0;
 
