@@ -84,12 +84,13 @@ h3 {
     font-family: "inter", Helvetica, sans-serif;
 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     color: #0A4148;
     padding: 0;
     text-transform: uppercase;
     margin: 0 0 30px;
+    text-decoration-line:
 }
 
 h4 {
