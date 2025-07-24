@@ -91,7 +91,7 @@ h3 {
     padding: 0;
     text-transform: uppercase;
     margin: 0 0 30px;
-    text-decoration-line:
+    text-decoration-line;
 }
 
 h4 {
@@ -329,6 +329,7 @@ nav {
 }
 
 .nav__item {
+    font-family: "inter", Helvetica, sans-serif;
     margin-right: 1.4em;
 }
 
@@ -641,6 +642,10 @@ a {
     text-underline-offset: 3px;
 }
 
+.int-link{
+    font-family: "inter", Helvetica, sans-serif;
+}
+
 .int-link:hover {
     -webkit-text-decoration: double underline;
     text-decoration: double underline;
@@ -677,6 +682,7 @@ a:hover {
 }
 
 .down-link {
+    font-family: "inter", Helvetica, sans-serif;
     padding: 0px;
     font-weight: 400;
 }
@@ -712,6 +718,7 @@ a:hover {
 
 
 .ext-link {
+    font-family: "inter", Helvetica, sans-serif;
     padding: 0px;
     font-weight: 400;
 }
