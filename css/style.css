@@ -1,4 +1,5 @@
 @import url(https://rsms.me/inter/inter.css);
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Fenix&family=Mate:ital@0;1&family=Rosarivo:ital@0;1&display=swap');
 
 html
 
@@ -23,7 +24,7 @@ html
 
 
 body {
-    font-family: 'Inter', Helvetica, sans-serif;
+    font-family: 'Rosarivo', Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
 
 
@@ -631,7 +632,7 @@ ul li:before {
 
 /*Links*/
 a {
-    font-family: "inter", Helvetica, sans-serif;
+    font-family: "Rosarivo", Helvetica, sans-serif;
     font-weight: 400;
     color: #04535E;
     cursor: pointer;
