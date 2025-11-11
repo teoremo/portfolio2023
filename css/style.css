@@ -285,7 +285,7 @@ cite {
 
 .page__content {
 
-    max-width: 786px;
+    /*max-width: 786px;*/
 
 }
 
@@ -444,6 +444,13 @@ img {
 
 }
 
+.image-card {
+    
+    margin: 60px auto 60px auto;
+
+
+}
+
 
 .image-s {
     width: 60vw;
@@ -495,7 +502,7 @@ ul li:before {
 .homepage__card {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 786px;
+    /*max-width: 786px;*/
     padding-bottom: 20px;
     margin-bottom: 60px;
     border-bottom: 1px solid #04535E;
