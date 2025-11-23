@@ -1,5 +1,76 @@
-@import url(https://rsms.me/inter/inter.css);
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fenix&family=Figtree:ital,wght@0,300..900;1,300..900&family=Rosarivo:ital@0;1&display=swap');
+/* Montreal Font Family */
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-Thin.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-Bold.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('../src/fonts/Montreal/PPNeueMontreal-SemiBolditalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
 html
 
 /* move scrollbar out of page*/
@@ -23,12 +94,13 @@ html
 
 
 body {
-    font-family: 'Figtree', Helvetica, sans-serif;
+    /* Body font - Montreal (was Figtree) */
+    font-family: 'Montreal', Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
 
 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.017em;
@@ -54,11 +126,12 @@ strong {
 }
 
 h1 {
-    font-family: "Rosarivo", Helvetica, sans-serif;
+    /* Heading font - Montreal (was Rosarivo) */
+    font-family: "Montreal", Helvetica, sans-serif;
     -webkit-font-feature-settings: "ss01";
     font-feature-settings: "ss01";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 42px;
     line-height: 1.5;
     color:  #013b42;
@@ -67,10 +140,11 @@ h1 {
 }
 
 h2 {
-    font-family: "Rosarivo", Helvetica, sans-serif;
+    /* Heading font - Montreal (was Rosarivo) */
+    font-family: "Montreal", Helvetica, sans-serif;
 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
     color: #142e32;
     line-height: 1.5;
@@ -81,10 +155,11 @@ h2 {
 }
 
 h3 {
-    font-family: "Figtree", Helvetica, sans-serif;
+    /* Body font - Montreal (was Figtree) */
+    font-family: "Montreal", Helvetica, sans-serif;
 
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     color: #0A4148;
     padding: 0;
@@ -94,7 +169,8 @@ h3 {
 }
 
 h4 {
-    font-family: "Rosarivo", Helvetica, sans-serif;
+    /* Heading font - Montreal (was Rosarivo) */
+    font-family: "Montreal", Helvetica, sans-serif;
 
     font-style: normal;
     font-weight: 500;
@@ -107,7 +183,8 @@ h4 {
 
 
 blockquote {
-    font-family: "Rosarivo";
+    /* Heading font - Montreal (was Rosarivo) */
+    font-family: "Montreal";
     font-weight: 700;
     font-size: 30px;
     line-height: 150%;
@@ -329,7 +406,8 @@ nav {
 }
 
 .nav__item {
-    font-family: "Figtree", Helvetica, sans-serif;
+    /* Body font - Montreal (was Figtree) */
+    font-family: "Montreal", Helvetica, sans-serif;
     margin-right: 1.4em;
 }
 
@@ -640,8 +718,9 @@ ul li:before {
 
 /*Links*/
 a {
-    font-family: "Figtree", Helvetica, sans-serif;
-    font-weight: 400;
+    /* Body font - Montreal (was Figtree) */
+    font-family: "Montreal", Helvetica, sans-serif;
+    font-weight: 500;
     color: #04535E;
     cursor: pointer;
 
@@ -650,7 +729,8 @@ a {
 }
 
 .int-link{
-    font-family: "Figtree", Helvetica, sans-serif;
+    /* Body font - Montreal (was Figtree) */
+    font-family: "Montreal", Helvetica, sans-serif;
 }
 
 .int-link:hover {
@@ -689,9 +769,10 @@ a:hover {
 }
 
 .down-link {
-    font-family: "Figtree", Helvetica, sans-serif;
+    /* Body font - Montreal (was Figtree) */
+    font-family: "Montreal", Helvetica, sans-serif;
     padding: 0px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .down-link:hover {
@@ -725,9 +806,10 @@ a:hover {
 
 
 .ext-link {
-    font-family: "Figtree", Helvetica, sans-serif;
+    /* Body font - Montreal (was Figtree) */
+    font-family: "Montreal", Helvetica, sans-serif;
     padding: 0px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .ext-link:hover {
@@ -807,10 +889,11 @@ a:hover {
     background-color: transparent;
     cursor: pointer;
     text-align: left;
-    font-family: "Figtree", Helvetica, sans-serif;
+    /* Body font - Montreal (was Figtree) */
+    font-family: "Montreal", Helvetica, sans-serif;
     padding: 0px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 35px;
     color: #04535E;
     margin-bottom: 15px;
